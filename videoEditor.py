@@ -31,7 +31,7 @@ def convertRGB(minimum, maximum, value):
 #headless: Boolean
 
 #Create a new video using EEG data and eye gaze coordinates to show a viewer's attention while watching a video
-def focusEditor(eyeCoordinates,eegData,focusRadius = 40,auraRadius = 50,fps,openVidPath,openAudioPath,saveVidPath,headless = False):
+def focusEditor(eyeCoordinates,eegData,fps,openVidPath,openAudioPath,saveVidPath,focusRadius = 40,auraRadius = 50,headless = False):
 	
 	# Determine dimensions of the video, define the codec, and create VideoWriter/VideoCapture objects
 	codec = cv2.VideoWriter_fourcc(*'mpeg')
